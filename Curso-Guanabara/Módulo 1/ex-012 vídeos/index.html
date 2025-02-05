@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando Vídeos em HTML5</title>
+</head>
+<body>
+    <h1>Hospedagem própria</h1>
+    <p>Este vídeo está hospedado em 2 formatos próprios, sendo eles mp4, e webm no meu próprio servidor</p>
+    <video width="560" poster="imagens/banner.jpg" controls> <!--poster serve para indicar um banner no video, controls serve para colocar botões de pause e play no vídeo.-->
+        <source src="midia/video-suspense.mp4" type="video/mp4">
+        <source src="midia/Video-Suspense.webm" type="video/webm">
+        <p>Infelizmente seu navegador é incapaz de produzir vídeo.</p>
+    </video>
+
+    <h1>Inserindo vídeos do Youtube</h1>
+    <!--Para inserir apenas ir no vídeo e clicar em compartilhar e incorporar em seguida colar o código aqui-->
+    <!--Vídeos do youtube, não consemem a band larga do seu servidor, economizando dados... porém terá padrões do youtube no vídeo e qualquer pessoa pode ver seu vídeo no youtube pode ser prejudicial para vídeo privados como videoaulas pagas.-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/N9GQDjD9keE?si=f6quyiOoBMBHbeAC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h1>Inserindo vídeo do Vímeo</h1>
+    <!--Para inserir apenas ir no vídeo e clicar em compartilhar e incorporar em seguida colar o código aqui-->
+    <!--Vímeo é ótimo para hospedagem com privacidade, e também tem uma interface do vídeo maqis agradável, permite vídeo privado como apenas assinantes assistir e também não tem propagando ao pause o vídeo-->
+    <iframe src="https://player.vimeo.com/video/351698354?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Levante Filmes - Animações"></iframe>
+</body>
+</html>

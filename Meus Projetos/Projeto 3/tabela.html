@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+    #cardapio {
+    font-family: Arial, sans-serif;
+    background-color: #2c2c2c;
+    color: #fff;
+    padding: 20px;
+}
+
+#cardapio h2 {
+    text-align: center;
+    color: #ffb400;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.categoria {
+    margin-bottom: 20px;
+    border: 2px solid #ffb400;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.categoria h3 {
+    background-color: #ffb400;
+    color: #2c2c2c;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #fff;
+    padding-bottom: 10px;
+}
+
+.item {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.preco {
+    color: #ffb400;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+p {
+    margin: 5px 0 0 0;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+    </style>
+</head>
+<body>
+    <section id="cardapio">
+        <h2>Nosso Cardápio</h2>
+        <div class="categoria">
+            <h3>Burgers</h3>
+            <ul>
+                <li>
+                    <span class="item">Bacon Cheeseburger</span>
+                    <span class="preco">$55.00</span>
+                    <p>Chicken breast, cheddar wrapped in a crispy</p>
+                </li>
+                <li>
+                    <span class="item">Chicken Hamburger</span>
+                    <span class="preco">$65.00</span>
+                    <p>Bihari chicken chunks, sweet corn</p>
+                </li>
+                <li>
+                    <span class="item">Double Cheeseburger</span>
+                    <span class="preco">$30.00</span>
+                    <p>Vegetables wrapped in a crispy tortilla</p>
+                </li>
+            </ul>
+        </div>
+        <div class="categoria">
+            <h3>Snacks</h3>
+            <ul>
+                <li>
+                    <span class="item">Chicken Spin Roll</span>
+                    <span class="preco">$55.00</span>
+                    <p>Chicken breast, cheddar wrapped in a crispy</p>
+                </li>
+                <li>
+                    <span class="item">BBQ Spin Roll</span>
+                    <span class="preco">$65.00</span>
+                    <p>Bihari chicken chunks, sweet corn</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>

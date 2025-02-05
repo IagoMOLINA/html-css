@@ -1,0 +1,405 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poiret+One&family=Tangerine:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'Paris';
+    src: url(fonts/ArtisanParis-Regular.otf) format(opentype);
+}
+
+:root {
+    --cor01: #d9d8d7;
+    --cor02: #bfb854;
+    --cor03: #72a603;
+    --cor04: #260c03;
+    --cor05: #a03f1f;
+
+    --font-normal: 'Poiret One';
+    --font-estilizada: 'Tangerine';
+    --font-titulo: 'Paris';
+    --font-titulo2: 'Bebas Neue';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth; /* Rolagem da página automatica, até o item clicado em NAV*/
+}
+
+body {
+    background: #f7f1e8 url(images/fundo.png);
+}
+
+main {
+    max-width: 85%;
+    background: #f4f8ef;
+    margin: auto;
+    padding-top: 4%;
+    box-shadow: 1px 2px 10px black;
+    padding-bottom: 1%;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+main h1, main h2, main h3 {
+    font-family: var(--font-titulo2);
+}
+
+body p, li {
+    font-family: var(--font-normal);
+    font-weight: 600;
+    line-height: 25px;
+    font-size: 1.1em;
+}
+
+header {
+    background-image: linear-gradient(to top, var(--cor04), var(--cor05));
+    min-height: 190px;
+    text-align: center;
+    box-shadow: 1px 2px 8px 0px rgba(0, 0, 0, 0.349);
+}
+
+header h1 {
+    font-family: var(--font-titulo2);
+    font-weight: bolder;
+    font-size: 3.5em;
+    padding: 40px 0px 0px 0px;
+    color: var(--cor01);
+    text-shadow: 1px 1px 1px black;
+}
+
+header > p {
+    margin: -10px 0 30px 0;
+    color: var(--cor01);
+}
+
+nav > a {
+    display: inline-block;
+    padding: 6px;
+    color: var(--cor01);
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .3s;
+    font-size: 1.1em;
+}
+
+nav > a:hover {
+    color: white;
+    background-color: #725e548c;
+    border-radius:  6px;
+}
+
+img#logo {
+    max-width: 65px;
+}
+
+section h2 {
+    padding-top: 20px;
+    font-size: 2.6em;
+}
+
+section h3 {
+    font-size: 1.8em;
+}
+
+section p {
+    margin-bottom: 200px;
+    text-indent: 35px;
+    max-width: 700px;
+    min-width: 300px;
+    padding: 7px;
+    display: inline-block;
+}
+
+
+
+.container {
+    display: flex; /* Exibe o texto e a imagem lado a lado */
+    align-items: center; /* Alinha verticalmente os itens ao centro */
+    justify-content: space-between; /* Coloca o texto e a imagem com espaçamento entre eles */
+}
+
+.container img {
+    width: 50%; /* Largura da imagem */
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.texto {
+    display: flex; /* Usado para empilhar o h3 e o p verticalmente */
+    flex-direction: column; /* Coloca os elementos de texto em uma coluna */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    text-align: center; /* Centraliza o texto */
+    width: 48%; /* Largura do texto */
+}
+
+.texto p {
+    margin: auto ;
+}
+
+#imagem-conceito {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.container li {
+    text-align: left;
+    width: 90%;
+    margin-left: 9%;
+    list-style-type: '✔️\00A0\00A0';
+    line-height: 29px;
+}
+
+section > h2 {
+    text-align: center;
+    margin:12% auto 8% auto;
+    background-image: linear-gradient(to right, transparent , var(--cor05)50%, transparent);
+    width: 20%;
+    padding-bottom: 10px;
+}
+
+.container-famosos-left {
+    display: flex; /* Exibe o texto e a imagem lado a lado */
+    align-items: center; /* Alinha verticalmente os itens ao centro */
+    justify-content: space-between; /* Coloca o texto e a imagem com espaçamento entre eles */
+    margin-bottom: 13%;
+}
+
+.container-famosos-left img {
+    width: 65%; /* Largura da imagem */
+    border-top-right-radius: 350px;
+    border-bottom-right-radius: 350px;
+}
+
+.container-famosos-left img:hover {
+    filter: contrast(70%);
+    filter: saturate(130%);
+    transform: scale(1.01);
+}
+
+.container-famosos-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 13%;
+}
+
+.container-famosos-right img{
+    width: 65%;
+    border-top-left-radius: 350px;
+    border-bottom-left-radius: 350px;
+}
+
+.container-famosos-right img:hover {
+    filter: contrast(70%);
+    filter: saturate(130%);
+    transform: scale(1.01);
+}
+
+.container-drinks-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4%;
+
+}
+
+.container-drinks-right img{
+    border-radius: 150px 0px 0px 150px;
+    box-shadow: -5px 0px 20px 0px #00000088;
+    transition: 0.2s;
+}
+
+.container-drinks-right img:hover{ 
+    filter: contrast(70%);
+    filter: saturate(130%);
+    box-shadow: -13px 0px 20px 0px #0000005b;
+    transform: scale(1.01);
+}
+
+.container-drinks-left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4%;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.container-drinks-left img {
+
+    border-radius: 0px 150px 150px 0px;
+    box-shadow: 5px 0px 20px 0px #00000088;
+}
+
+.container-drinks-left img:hover{ 
+    filter: contrast(70%);
+    filter: saturate(130%);
+    box-shadow: 13px 0px 20px 0px #0000005b;
+    transform: scale(1.01);
+}
+
+.texto-drinks {
+    text-align: center;
+    margin: auto;
+    padding-top: 12%;
+}
+
+.imagem-acompanhamento {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.imagem-acompanhamento img {
+    width: 36%;
+    border-radius: 15%;
+    box-shadow: 1px 4px 14px rgba(0, 0, 0, 0.527);
+    transition: 0.2s;
+}
+
+.imagem-acompanhamento img:hover {
+    filter: contrast(70%);
+    filter: saturate(130%);
+    box-shadow: -4px -7px 20px rgba(0, 0, 0, 0.205);
+    transform: scale(1.02);
+}
+
+.texto-acompanhamento {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    padding: 100px auto 200px auto;
+    margin-bottom: -100px;
+    padding-top: 35px;
+}
+
+.texto-acompanhamento p {
+    max-width: 650px;
+    min-width: 280px;
+}
+
+
+/* ITENS DO CARDÁPIO */
+
+
+.categoria {
+    max-width: 1000px;
+    min-width: 280px;
+    border: 2px solid #ffb400;
+    background-color: #2c2c2c;
+    color: #f4f8ef;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px auto;
+}
+
+.categoria > h3 {
+    background-color: #ffb400;
+    color: #2c2c2c;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    text-align: center; /* Alinha o texto dentro do elemento, caso necessário */
+    max-width: 34%;
+    margin: 3% auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinhar ao topo */
+    margin-bottom: 10px;
+    border-top: 1px dashed #fff;
+    padding-bottom: 10px;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Espaço entre nome e descrição */
+    max-width: 85%; /* Limita largura do texto */
+    height: 90px;
+}
+
+.item-info p {
+    text-indent: -5px;
+    color: #ccc
+
+}
+
+.item {
+    font-family: var(--font-titulo2);
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding-top: 10px;
+}
+
+.preço {
+    font-family: var(--font-titulo2);
+    color: #f4f8ef;
+    font-weight: bolder;
+    font-size: 1.4rem;
+    white-space: nowrap; /* Impede quebra de linha */
+    padding: 5px;
+}
+
+.preço:hover {
+    color: rgb(228, 58, 15);
+}
+
+.linha-final {
+    border-bottom: 1px dashed #fff;
+}
+
+/* ITENS DO FOOTER (RODA-PÉ) */
+footer {
+    margin-top: 25px;
+    text-align: center;
+    width: 100%;
+    background-color: #2c2c2c;
+    color: white;
+}
+
+#fale-conosco h2 {
+    font-size: 1.3em;
+    color: #f4f8ef;
+    padding-top: 10px;
+}
+
+#fale-conosco p {
+    padding: 7px;
+}
+
+#fale-conosco a {
+    text-decoration: none;
+    font-size: 1.18em;
+    color: var(--cor02);
+    padding: 0 7px;
+
+}
+
+a.externo::after{
+    content: '\00A0\1F517';
+}
+
+#fale-conosco a:hover {
+    text-decoration: underline;
+    color: rgb(11, 170, 96);
+}
+
+footer > p {
+    border: 1px dashed #353535;
+    margin-top: 20px;
+    font-size: 0.9em;
+}

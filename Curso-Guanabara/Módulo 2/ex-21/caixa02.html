@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(151, 151, 130, 0.808);
+            margin: 0;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 40px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: dimgrey;
+            padding: 5px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.329);
+        }
+
+        nav > a {
+            text-decoration: none;
+            font-size: 20px;
+            padding: 10px;
+            color: white;
+            display: inline-block; /* Garante que o transform funcione corretamente */
+        }
+
+        nav >a:hover {
+            color:greenyellow;
+            transform: scale(1.1);
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 40px;
+        }
+
+        article {
+            text-align: justify;
+            text-indent: 16px;
+        }
+
+        section {
+            text-align: center;
+        }
+
+        article h2 {
+            text-align: center;
+        }
+        article > aside {
+            text-align: center;
+        }
+
+        article > aside:hover {
+            color: red;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Espertes Política Técnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure nulla rerum, dicta unde tempore ducimus dolorum eos possimus! Ipsa deleniti dolor consequatur fugit mollitia eos nam temporibus, odio a natus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nam odio cupiditate fugiat quis illo, veritatis aspernatur unde tenetur dolores officiis numquam natus. Quia, repudiandae sed. Temporibus provident incidunt quidem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus repellendus eaque id natus obcaecati, rerum saepe eius accusantium ab sed ullam, ad illo. Quia, nemo mollitia quidem assumenda nam minus.</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo Curso em video</p>
+    </footer>
+</body>
+</html>

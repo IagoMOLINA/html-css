@@ -1,0 +1,27 @@
+BOX-LEVEL    -> eles sempre pulam uma linha antes e depois  e pegam 100% do widht da tela e é responsivo!
+ TAGS - BOX-LEVEL:
+		<div>
+		<h1> a <h6>
+		<p>
+		<main>
+		<header>
+		<nav>
+		<article>
+		<aside>
+		<footer>
+		<form>
+		<video>
+
+INLINE-LEVEL -->Não pula uma linha, ela abre uma caixa na mesma linha e do tamanho do contéudo dela e se precisar o que vier a seguir fica após a caixa
+TAGS INLINE-LEVEL:
+		<span>
+		<a>
+		<code>
+		<small>
+		<strong>
+		<em>
+		<sup>   e <sub>
+		<label>
+		<button>
+		<input>
+		<select>

@@ -1,0 +1,51 @@
+@charset 'UTF-*';
+
+/* 
+    1 - Em HTML é id = em CSS é #
+    2 - Em HTML é class = em CSS é .
+    3 - a classe em HTML span podemos upar para destacar estilos no meio do texto
+    4 - Consigo usar mais de uma class por elemento separada pos espaço
+    5 - Pode usar uma id e classes também a um elemento
+    6 - Porém só pode usar um ID único por página apenas para um elemento, não se pode repetir um id em 2 itens, apenas 1 para cada.
+*/
+
+body {
+    background-color: rgba(230, 252, 230, 0.815);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1  {
+    color: rgb(30, 112, 62);
+}
+
+h2 {
+    color: rgba(36, 134, 74, 0.705);
+    
+}
+
+#principal {
+    text-align: center;
+    font-style: italic;
+    color: darkblue;
+}
+
+.basico {
+    color:green
+}
+
+.intermediario {
+    color:rgba(97, 22, 167, 0.815)
+}
+
+.avançado {
+    color: rgb(168, 3, 38);
+}
+
+.destaque {
+    background-color: rgb(238, 201, 153);
+}
+
+.marca {
+    text-decoration: underline;
+    font-size: 20px;
+}
