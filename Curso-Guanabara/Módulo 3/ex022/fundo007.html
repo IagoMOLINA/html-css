@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container {
+            /* Para deixarmos centralizarmos um alinhamento vertical, temos que deixar o container que contém de fundo com position relative (padrão) , */
+            position: relative;  
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            height: 97vh;
+            background-color: purple;
+            padding: 10px;
+        }
+
+        #conteudo {
+
+            /* Para centralizar o conteudo no container, temos que colocar o conteudo com position absolute e com essa propriedade conseguimos alterar o top e left do contéudo no container em que ele estiver, lembrando que por padrão sempre ficara (centralizado se for o caro a ponta esquerda do top),  e para mudar o angulo do que vai ser posicionado usamos o transform com translate e definimos qual a posição que ira iniciar  */
+            
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+
+            position: absolute;      /* --> definindo a posição absolute para poder alterar verticalmente dentro do container */
+            width: 400px;
+            height: 200px;
+            background-color: yellow;
+
+            top: 50%;                 /* --> passando a posição do top em que vai estar do height do container que ele pertence */
+            left: 50%;                /* --> passando a posição do left que seria o widht em que vai estar no container em que ele pertence */
+
+            transform: translate(-50%, -50%);  /* --> centralizando com -50% e -50% para deixar o meio do quadrado amarelo centralizado ao invés da ponta esquerda superior que é o padrão */
+        }
+
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
