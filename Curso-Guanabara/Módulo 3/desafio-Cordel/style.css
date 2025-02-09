@@ -54,17 +54,21 @@ article {
     font-weight: 300;
 }
 
-section.normal {
-    color: black;
-    background-color: rgb(255, 255, 255);
+section {
+    
     padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 30px;
     line-height: 2em;
 }
 
+section.normal {
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+
 section.imagem {
-    background-image: url('imagens/background001.jpg');
+    background-color: #41404067;
     background-size: cover;
     background-position: right center;
     background-repeat: no-repeat;
@@ -72,9 +76,17 @@ section.imagem {
     
 }
 
+section#imagem1 {
+    background-image: url('imagens/background001.jpg');
+
+}
+
+section#imagem2 {
+    background-image: url('imagens/background002.jpg');
+}
 .texto-img {
     margin-left:32px;
-    width: 42vw;
+    width: 41vw;
     color: white;
     background-color: rgba(87, 86, 86, 0.39);
     margin-top: 10vh;
