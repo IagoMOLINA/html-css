@@ -93,3 +93,19 @@ section#imagem2 {
     text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.507);
 }
 
+footer{
+    text-align: center;
+    padding: 13px;
+    color: lightgrey;
+}
+
+footer  a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: whitesmoke;
+}
