@@ -55,7 +55,6 @@ article {
 }
 
 section {
-    
     padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 30px;
@@ -73,6 +72,7 @@ section.imagem {
     background-position: right center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    margin: 7vh 0;
     
 }
 
@@ -85,13 +85,9 @@ section#imagem2 {
     background-image: url('imagens/background002.jpg');
 }
 .texto-img {
-    margin-left:32px;
     width: 41vw;
     color: white;
-    background-color: rgba(87, 86, 86, 0.39);
-    margin-top: 10vh;
-    margin-bottom: 10vh;
+    background-color: rgba(0, 0, 0, 0.514);
     line-height: 2em;
-    
 }
 
