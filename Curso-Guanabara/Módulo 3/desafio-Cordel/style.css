@@ -64,6 +64,7 @@ section {
 section.normal {
     color: black;
     background-color: rgb(255, 255, 255);
+    padding-bottom: 25vh;
 }
 
 section.imagem {
@@ -72,8 +73,7 @@ section.imagem {
     background-position: right center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    margin: 7vh 0;
-    
+    box-shadow: inset 4px 4px 20px rgba(0, 0, 0, 0.719);
 }
 
 section#imagem1 {
@@ -89,5 +89,7 @@ section#imagem2 {
     color: white;
     background-color: rgba(0, 0, 0, 0.514);
     line-height: 2em;
+    padding: 5px;
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.507);
 }
 
