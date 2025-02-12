@@ -13,6 +13,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -27,9 +28,26 @@
             background-color: lightgray;
         }
         
-        thead, tfoot {
+        thead, tfoot {      
             background-color: #383838;
             color: white;
+        }
+
+        /* Aqui está grudando o header até o final da tabela, precisa que a table seja position relative. e o th de thead com sticky ! */
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+
+        /*pseudo-classe nth-child que é a filha recebe even (par) e faz cada linha par ficar cinza, ou odd (impar) ficar cinza, podemos usar também a 2n de parâmetros*/
+
+        tbody > tr:nth-child(odd) {  /* ou 2n-1 (impar)*/ 
+            background-color: white;
+        }
+
+tbody > tr:nth-child(even) {  /* ou 2n (par) */
+            background-color: lightgray;
         }
 
         .num {
