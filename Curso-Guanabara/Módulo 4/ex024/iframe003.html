@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframest</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela{
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime fuga, veniam provident sunt, ea exercitationem corrupti fugiat enim distinctio corporis similique maiores sapiente repellendus ullam obcaecati, veritatis officiis molestiae magnam!
+    </p>
+
+    <ul>
+        <li><a href="paginas-extras/pag001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+        <!-- 
+            Abrimos 3 páginas dentro de um iframe, e para isso apenas precisamos dar o parâmetro name para o iframe e dentro do link específicar o target com o name do iframe 
+
+            o name usado foi = frame 
+         -->
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem a numquam facilis labore assumenda, laboriosam itaque ratione culpa temporibus nihil ducimus ipsum laudantium tempora quasi ad, animi odio veniam atque? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod debitis hic aliquam obcaecati nemo, cupiditate est enim rem iste exercitationem totam. Deserunt provident natus accusantium, eum animi nam labore quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni fugit explicabo, reprehenderit molestias architecto atque neque? Sint ad accusantium esse obcaecati laboriosam voluptatum dolorum hic ducimus, eveniet fuga rem illo.
+    </p>
+    
+    <iframe id="tela" name="frame" src=""  ></iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, velit qui omnis hic explicabo excepturi alias quidem nulla nobis porro blanditiis error, mollitia cumque! Repellendus consectetur provident ipsa tenetur eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolorum, eveniet itaque nihil commodi architecto, fugiat et animi quos modi vel id accusamus iste quibusdam facere! Soluta quidem debitis quibusdam.</p>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo de iframe</title>
+    <style>
+        iframe{
+            height: 500px;
+            width: 500px;
+            border: 1px dashed black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando o uso de um iframe</h1>
+    <!-- 
+    Abaixo um exemplo de iframe, abre uma janelinha no própria página do navegador 
+    Tamanho padrão de um iframe 300x150
+    -->
+
+
+    <!-- 
+            frameborder direto no iframe só tem 2 parâmetros 0 e 1
+            scolling não funciona direito em alguns navegadores, serve para deixa com barra de rolagem ou não. 
+    -->
+    <p>
+        Acessando o site do 
+        <iframe src="https://cursoemvideo.com" frameborder="0" height="500" >
+            <a href="https://cursoemvideo.com">cursoemvideo</a>      
+        </iframe> para aprender a desenvolver
+    </p>
+
+    <!-- o link (a) dentro do iframe é para caso o navegador não seja compátivel com iframe, irá aparecer o link que estou tentando mostrar dentro do navegador para o usuário. Ou seja dentro do iframe podemos usar parâmetros para informar o usuário caso não funcione. -->
+    <p>
+        O meu repositório
+        <iframe src="https://iagomolina.github.io/html-css/" frameborder="0" scolling="yes">
+           no <a href="https://iagomolina.github.io/html-css/">GitHub</a>
+        </iframe>
+        também é legal
+    </p>
+</body>
+</html>
