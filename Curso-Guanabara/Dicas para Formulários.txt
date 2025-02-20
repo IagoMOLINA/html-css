@@ -22,6 +22,8 @@ max -> número máximo aceito, exemplo acima, máximo 10 em uma nota
 
 step -> Ele define de quanto em quanto o valor pode aumentar ou diminuir, exemplo usado acima 0.1 
 
+value -> Define um valor padrão no formulário, exemplo em dia deixar o dia atual como padrão para cadastro de usuário.
+	
 minlength -> tamanho min de caractéres que o input vai aceitar.
 
 maxlength -> tamanho máximo de caractéres que o input vai aceitar.
