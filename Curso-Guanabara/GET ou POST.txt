@@ -1,0 +1,5 @@
+Método GET ou POST?
+
+Por padrão os furmulários vem em GET
+enviar dados pelo método GET só pode ter até 3000 bytes ou seja 3000 letras.
+POST é recomendado ser usado para dados sensíveis, acima de 3000 bytes ou enviar arquivos.
