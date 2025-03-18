@@ -1,0 +1,27 @@
+🔹 Valores do justify-content 🔹
+
+✔ flex-start (padrão)
+Alinha os itens no início do eixo principal (main-start).
+Em flex-direction: row, os itens ficam à esquerda.
+Em flex-direction: column, os itens ficam no topo.
+
+✔ flex-end
+Alinha os itens no final do eixo principal(main-end).
+Em flex-direction: row, os itens ficam à direita.
+Em flex-direction: column, os itens ficam na parte inferior.
+
+✔ center
+Centraliza os itens no eixo principal.
+Útil para distribuir os elementos no centro sem espaçamentos laterais.
+
+✔ space-between
+Distribui os itens com espaçamento igual entre eles.
+O primeiro item fica no início(main-start) e o último no final(main-end), sem margens laterais extras.
+
+✔ space-around
+Distribui os itens com espaços iguais ao redor deles.
+O espaço nas extremidades(main-start e main-end) é metade do espaço entre os itens.
+
+✔ space-evenly
+Distribui os itens com espaçamento completamente igual, inclusive nas extremidades.
+Diferente de space-around, pois os espaços laterais e internos têm o mesmo tamanho.
