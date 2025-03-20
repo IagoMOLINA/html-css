@@ -1,0 +1,34 @@
+Justify-content (alinhamento no eixo principal)
+Define como os itens são distribuídos ao longo do eixo principal.
+
+Valores aceitos:
+flex-start → Itens alinhados ao início do eixo principal.
+flex-end → Itens alinhados ao final do eixo principal.
+center → Itens centralizados no eixo principal.
+space-between → Itens distribuídos com espaço somente entre eles, sem margens nos extremos.
+space-around → Itens distribuídos com espaços iguais ao redor deles (metade do espaço nas extremidades).
+space-evenly → Itens distribuídos com espaços iguais entre e nas extremidades.
+
+
+Align-items (alinhamento no eixo transversal)
+Define o alinhamento dos itens individuais ao longo do eixo transversal.
+
+Valores aceitos:
+stretch (padrão) → Os itens esticam para preencher o container no eixo transversal.
+flex-start → Itens alinhados ao início do eixo transversal.
+flex-end → Itens alinhados ao final do eixo transversal.
+center → Itens centralizados no eixo transversal.
+baseline → Itens alinhados de acordo com a linha base do texto dentro deles.
+
+
+Align-content (alinhamento das linhas no eixo transversal, apenas com múltiplas linhas)
+Define como as linhas dentro do container são distribuídas ao longo do eixo transversal, mas só funciona quando há múltiplas linhas (flex-wrap: wrap ou wrap-reverse).
+
+Valores aceitos:
+flex-start → Linhas agrupadas no início do eixo transversal.
+flex-end → Linhas agrupadas no final do eixo transversal.
+center → Linhas agrupadas no centro do eixo transversal.
+space-between → Linhas distribuídas com espaço somente entre elas, sem margens nos extremos.
+space-around → Linhas distribuídas com espaços iguais ao redor delas.
+space-evenly → Linhas distribuídas com espaços iguais entre e nas extremidades.
+stretch (padrão) → Linhas esticam para ocupar todo o espaço disponível no eixo transversal.

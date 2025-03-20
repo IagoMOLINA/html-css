@@ -10,7 +10,22 @@
 
             display: flex;
             flex-direction: row;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
+
+            /* Propriedades do flex-wrap e flex-direction explicadas: 
+                flex-direction     temos essas 4
+             -> row             <--  define o flexbox em linha
+             -> row-reverse     <--  define o flexbox em linha reversa
+             -> column          <--  define o flexbox em coluna 
+             -> colum-reverse   <--  define o flexbox em coluna reversa
+
+                flex-wrap  temos essas 3
+            -> wrap             <-- quebra os itens que não caber no    container para direção do eixo transversal
+
+            -> nowrap           <-- não deixa quebrar os itens do container 
+            
+            -> wrap-reverse     <--quebra os itens que não couber no container reverso ao eixo transversal
+ */
 
             /* 
             ou podemos usar um flex-flow é praticamente um shorthand para abreviar as tags 
