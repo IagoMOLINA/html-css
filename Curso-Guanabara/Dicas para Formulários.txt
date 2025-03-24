@@ -1,0 +1,45 @@
+Formulários
+
+label -> é idenficação do input e dentro do for colocar o id do input em que se refere, exemplo:
+
+<label for="iusu">Usuário: </label>
+
+input -> Ele representa qualquer informação que o usuário fornece para um programa durante sua execução.
+
+alguns atributos de input ->
+
+type -> para especificar o tipo de informação que esse input vai obter, caixa de texto com logins, senhas ou até botões etc...,
+
+name -> é o nome que vai ser usado para se referenciar ao input e pode ser usado junto ao html e ao php por exemplo.
+
+id  -> é um identificador para ser usado por exemplo por javascript para se referenciar a esse input
+
+required -> obriga o usuário a prencher o input, indicando obrigatório.
+
+min -> número minimo aceito, exemplo form003html módulo 4, nota min 0
+
+max -> número máximo aceito, exemplo acima, máximo 10 em uma nota
+
+step -> Ele define de quanto em quanto o valor pode aumentar ou diminuir, exemplo usado acima 0.1 
+
+value -> Define um valor padrão no formulário, exemplo em dia deixar o dia atual como padrão para cadastro de usuário.
+	
+minlength -> tamanho min de caractéres que o input vai aceitar.
+
+maxlength -> tamanho máximo de caractéres que o input vai aceitar.
+
+placeholder-> escrita dentro do input para ajudar o usuário (some após ter algum caractére digitado no input).
+
+autocomplete no <input> define se o navegador deve sugerir preenchimentos automáticos para o campo. Ele melhora a experiência do usuário ao permitir que informações já inseridas sejam reutilizadas.
+
+Exemplos de valores para autocomplete:
+
+"on" – Ativa a sugestão de preenchimento automático.
+"off" – Desativa o preenchimento automático.
+"name" – Sugere um nome completo.
+"email" – Sugere um endereço de e-mail.
+"username" – Sugere um nome de usuário.
+"new-password" – Sugere uma senha forte para novos cadastros.
+"current-password" – Sugere uma senha salva para login.
+"tel" – Sugere um número de telefone.
+"street-address" – Sugere um endereço residencial.

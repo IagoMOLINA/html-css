@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+
+            <!-- Para input tipo radio onde você quer apenas 1 opção selecionada entre todas, você tem de deixar o name igual para pertencerem ao mesmo grupo, assim só aceitará 1 opção do grupo com mesmo name -->
+
+            <legend>Sexo "MODO ERRADO CONSEGUE MARCAR 2 OPÇÕES DE RADIO"</legend>
+            <input type="radio" name="sxmas" id="imas" value="M"><label for="isxmas">Masculino</label><br>
+            <input type="radio" name="sxfem" id="ifem" value="F"><label for="ifem">Feminino</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Sexo "MODO CORRETO APENAS 1 OPÇÃO"</legend>
+            <input type="radio" name="sexo" id="sxmas" value="M"><label for="sxmas">Masculino</label><br>
+            <input type="radio" name="sexo" id="sxfem" value="F"><label for="sxfem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="esbass" id="iesbass"> <label for="iesbass">Basquete</label>
+            <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label>
+            <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label>
+            <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

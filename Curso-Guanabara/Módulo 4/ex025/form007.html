@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Forumário</h1>
+    <form action="cadastro.php" method="get">
+       <p>
+
+        <!-- Não aceita usuário digitar.
+        criando um select de grupos e separando eles por região nas opções 
+
+        select -> inicia o grupo "lista" 
+
+        optgroup -> separa os grupos por algo que você deseja com um label e não é clicável
+
+        option -> é um item da lista select
+
+        select -> deixa inicialmente marcado o item da lista
+
+        value -> como será salvo por exemplo no banco de dados 
+        -->
+
+        <label for="iest">Estado</label>
+        <select name="estado" id="iest">
+
+            <option value="" selected>--- Escolha ---</option>
+            <optgroup label="Região Sudeste">
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+            </optgroup>
+
+            <optgroup label="Região Nordeste">
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="PE">Pernambuco</option>
+                <option value="MA">Maranhão</option>
+            </optgroup>
+        </select>
+       </p>
+       
+       <!-- Usuário pode digitar 
+       Já com o "datalist" podemos criar uma lista por exemplo em um input de tipo texto, para auxiliar o usuário, aceitando que ele digite algo se não tiver na lista. Temos que colcoar list no input com o id de datalist para aparecer as opções.
+
+       datalist -> inicia as opções de list para o input, necessita o id para relacionamento entre ambos.
+
+       list -> com o id de datalist no input 
+
+       option -> para colocar os items que vai aparecer nesta lista
+
+       value -> é o padrão de valor que vai ser salvo. 
+       -->
+
+
+       <p> 
+        <label for="iprof">Profissão: </label>
+        <input type="text" name="prof" id="iprof" list="lstprof">
+        
+        <datalist id="lstprof">
+            <option value="Professor"></option>
+            <option value="Contabilidade"></option>
+            <option value="Desenvolvedor"></option>
+            <option value="Administrador"></option>
+        </datalist>
+       </p>
+
+       <!-- 
+       Sobre textarea, podemos dilimitar linhas e colunas, que seriam por caracteres, 30 caracteres de coluna e 10 de linhas o tamanho, mais é digitavelmente infinito no caso abaixo o número de caractéres.
+
+       cols -> colunas, seria 1 por caractere
+       rows -> linhas, seria 1 por caractere
+
+       vale lembrar que com textarea quase sempre o method do form é POST pelo mótivo de tamanho acima de 3000 bytes 
+       -->
+
+       <p>
+        <label for="imsg">Mensagem:</label><br>
+        <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Sua mensagem aqui..." ></textarea>
+       </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

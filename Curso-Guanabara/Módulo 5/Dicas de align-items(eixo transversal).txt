@@ -1,0 +1,18 @@
+A propriedade align-items define o alinhamento dos itens dentro de um contêiner flexível (display: flex) ou de um grid (display: grid) ao longo do eixo transversal (vertical, no caso de flex-direction: row).
+
+🔹 Valores do align-items 🔹
+
+✔ stretch (padrão)
+Os itens ocupam toda a altura do contêiner, ajustando-se automaticamente (eixo-transerval).
+
+✔ flex-start
+Alinha os itens ao topo do contêiner(cross-main) (ou à esquerda, se flex-direction: column).
+
+✔ flex-end
+Alinha os itens à parte inferior do contêiner(cross-end) (ou à direita, se flex-direction: column).
+
+✔ center
+Centraliza os itens verticalmente dentro do contêiner (entre o cross-start e cross-end).
+
+✔ baseline
+Alinha os itens pela linha de base do texto contido neles.

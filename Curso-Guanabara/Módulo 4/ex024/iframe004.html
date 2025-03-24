@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ullam cum nihil quae sint minus officia labore amet, asperiores corporis recusandae atque nostrum, assumenda necessitatibus dolorem incidunt aliquam cupiditate consectetur?</p>
+
+    <iframe src="paginas-extras/pag004.html" sandbox="allow-forms allow-scripts allow-same-origin" referrerpolicy="no-refferer">
+        <!-- 
+        adicionando segurança aos iframes, pois sites de terceiro pode ser maliciosos e capturar dados sensíveis atráves de seu site, então para deixar uma segurança padrão utilizamos 2 paramêtros
+
+        sandbox="sandbox"  -> isso não deixa realizar várias ações como executar scripts, formulários etc... para permitir temos que colocar allow-forms, porém tome cuidado apenas faça isso para sites em que você confia.
+
+        referrerpolicy="no-refferer" -> sempre deixar ligado para não deixar os dados dos seus usuários ser usado pelo site do iframe, combinado com o de cima permite as exções em que você configurar. -->
+
+
+        Seu Navegador não é compatível com isso...
+    </iframe>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In impedit molestias ducimus autem qui ratione expedita corporis perferendis. Illum, nesciunt tempore unde accusamus ab pariatur enim atque possimus facere. Fugit?</p>
+</body>
+</html>
